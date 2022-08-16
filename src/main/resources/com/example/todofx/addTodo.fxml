@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.todofx.AddTodo">
+   <children>
+      <MFXButton accessibleText="Go Back" layoutX="14.0" layoutY="14.0" onAction="#goBack" prefHeight="26.0" prefWidth="81.0" rippleColor="#d13131" text="Back" textAlignment="CENTER" underline="true">
+         <graphic>
+            <MaterialIconView glyphName="ARROW_BACK" />
+         </graphic></MFXButton>
+      <MFXTextField fx:id="taskName" floatingText="Task Name" layoutX="96.0" layoutY="76.0" prefHeight="51.0" prefWidth="426.0" />
+      <MFXButton alignment="CENTER" layoutX="99.0" layoutY="141.0" onAction="#addTask" prefHeight="36.0" prefWidth="426.0" style="-fx-background-color: F8333C;" text="Add" textAlignment="CENTER">
+         <graphic>
+            <MaterialIconView glyphName="ADD" />
+         </graphic>
+      </MFXButton>
+   </children>
+</AnchorPane>
